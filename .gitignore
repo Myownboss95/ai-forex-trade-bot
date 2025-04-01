@@ -15,3 +15,8 @@ yarn-error.log
 /.vscode
 /package-lock.json
 /composer.lock
+.idea
+.vscode
+.DS_Store
+Thumbs.db
+
