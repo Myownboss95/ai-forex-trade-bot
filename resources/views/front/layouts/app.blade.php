@@ -261,8 +261,8 @@
       <div class="row container">
         <div class="col l3 s12 app-mobile-center">
           <h6> {{ config('app.name')}}</h6>
-          <p><span class="material-icons notranslate">mail</span> info@creapcrestcapital.com</p>
-          <p>© 2014 - 2024 {{ config('app.name')}}</p>
+          <p><span class="material-icons notranslate">mail</span>info@aitraderbot.net</p>
+          <p>© 2014 - 2025 {{ config('app.name')}}</p>
         </div>
         <div class="col l9 s12" style="text-align: justify;"><br><small>The Transactions offered by this Website can be
             executed only by fully competent adults. Transactions with financial instruments offered on the Website

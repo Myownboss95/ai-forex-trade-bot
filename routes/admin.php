@@ -32,7 +32,7 @@ Route::get('/', [DashboardController::class, 'index'])->name('index');
 Route::as('cms.')->prefix('cms')->controller(CmsController::class)->group(
     function () {
         Route::get('', 'index')->name('index');
-        Route::get('update', 'update')->name('update');
+        Route::post('update', 'update')->name('update');
     }
 );
 Route::as('users.')->prefix('users')->controller(UserController::class)->group(function () {

@@ -2,8 +2,9 @@
 
 namespace App\Models;
 
-use Illuminate\Database\Eloquent\Factories\HasFactory;
+use App\Enums\CmsType;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 
 class Cms extends Model
 {
@@ -12,4 +13,7 @@ class Cms extends Model
     protected $table = 'cms';
 
     protected $guarded = ['id'];
+    protected $casts = [
+        'type' => CmsType::class,
+    ];
 }

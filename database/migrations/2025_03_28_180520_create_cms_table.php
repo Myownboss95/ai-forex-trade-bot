@@ -15,7 +15,8 @@ return new class extends Migration
     {
         Schema::create('cms', function (Blueprint $table) {
             $table->id();
-            $table->string('title');
+            $table->string('type')->unique();
+            $table->string('title')->nullable();
             $table->string('image')->nullable();
             $table->longText('content')->nullable();
             $table->timestamps();

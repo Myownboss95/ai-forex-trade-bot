@@ -1,16 +1,37 @@
 @extends('front.layouts.app')
+@php
+    $cmshero1 = $cms->firstWhere('type', $hero1);
+    $cmshero2 = $cms->firstWhere('type', $hero2);
+    $cmssection1 = $cms->firstWhere('type', $section1);
+    $cmssection2 = $cms->firstWhere('type', $section2);
+    $cmssection3 = $cms->firstWhere('type', $section3);
+    $cmssectionCharity = $cms->firstWhere('type', $sectionCharity);
 
+@endphp
 @section("content")
     <section class="bg bg-secondary app-py-3 fade-appear-done fade-enter-done">
       <div class="container app-py-3">
         <div class="container row" style="display: flex; flex-wrap: wrap-reverse;">
           <div class="col l5 s12 app-mobile-center"><br>
-            <h1>Profitability On The Rise</h1><br>
-            <p class="f-24">A trading platform that supports your financial goals.</p><br><a class="btn btn-large"
+            <div>
+              <h1>
+                {{ $cmshero1->title ?? 'Profitability On The Rise'}}
+                </h1>
+            <br>
+            <p class="f-24">
+              {!! $cmshero1->content ?? 'A trading platform that supports your financial goals.' !!}
+              </p>
+            </div>
+            
+            <br>
+            <a class="btn btn-large"
               href="{{ route('register')}}">Get Started</a>
           </div>
           <div class="col l6 offset-l1 s12">
-            <img src="{{asset('front/images/site/landing.png')}}" class="responsive-img" style="width: 400px">
+            <img src="{{
+              $cmshero1->image ??
+              asset('front/images/site/landing.png')
+              }}" class="responsive-img" style="width: 400px">
           </div>
         </div>
       </div>
@@ -19,16 +40,30 @@
       <div class="container app-py-3">
         <div class="row">
           <div class="col l6 s12 wow fadeInUp slow" style="visibility: visible;">
-            <center><img src="{{asset('front/images/site/device.png')}}" class="responsive-img"
+            <center><img src="{{
+            $cmshero2->image ??
+              asset('front/images/site/device.png')
+              }}" class="responsive-img"
                 style="height: 40vh;"><br><br></center>
           </div>
           <div class="col l6 s12 wow fadeInUp slow" style= "visibility: visible; animation-name: none;">
             <div class="container"><br><br>
-              <h2 style="color: white">Smooth Experience on any Device</h2><br>
-              <p class="app-text-justify f-24" style="color: white">Whether you prefer trading at your desk or on the go — {{ config('app.name')}}
+              <h2 style="color: white">
+                {!! $cmshero2->title ?? 'Smooth Experience on any Device' !!}
+                
+              </h2><br>
+                @if ($cmshero2->content)
+              <p class="app-text-justify f-24" style="color: white">
+                {!! $cmshero2->content !!}
+              </p>
+                @else
+              <p class="app-text-justify f-24" style="color: white">
+                Whether you prefer trading at your desk or on the go — {{ config('app.name')}}
                 has got you covered.</p>
               <p class="f-24">The custom-built platform has been adapted for any device you may choose and switching
                 is 100% seamless.</p><br>
+                @endif
+
             </div>
           </div>
         </div>
@@ -49,9 +84,17 @@
         <div class="container">
           <div class="row">
             <div class="col l6 s12 app-py-3">
-              <h2>134 countries</h2>
-              <p class="f-24">Traders from all over the world trust {{ config('app.name')}}. The platform interface is localized
-                into 12 languages.<br><br></p>
+              <h2>
+                {{ $cmssection1->title ?? '134 countries'}}
+              </h2>
+              <p class="f-24">
+                @if ($cmssection1->content)
+                {!! $cmssection1->content !!}
+                @else
+                Traders from all over the world trust {{ config('app.name')}}. The platform interface is localized
+                into 12 languages.<br><br>
+                @endif
+              </p>
             </div>
             <div class="col l6 s12"></div>
           </div>
@@ -85,18 +128,32 @@
         <div class="row container" style="display: flex; align-items: center; flex-wrap: wrap-reverse;">
           <div class="col l6 s12">
             <div class="container">
-              <center><img src="{{asset('front/images/site/customer-service.png')}}" class="responsive-img" style="max-height: 35vh;">
+              <center><img src="{{
+              $cmssection2->image ??
+                asset('front/images/site/customer-service.png')
+                }}" class="responsive-img" style="max-height: 35vh;">
               </center>
             </div>
           </div>
           <div class="col l6 s12">
-            <h2 class="wow fadeInUp slow" style= "visibility: visible; animation-name: none;">Unrivaled 24/7 Customer
-              Service</h2>
-            <p class="wow fadeInUp slow" style= "visibility: visible; animation-name: none;">Got an issue? We respond
-              under 5 minutes on live chat and solve the problem for you.</p><br><b><span
-                class="material-icons notranslate alt-color">chevron_right</span>Contact us anytime, from
+            <h2 class="wow fadeInUp slow" style= "visibility: visible; animation-name: none;">
+              {{ $cmssection2->title ?? 'Unrivaled 24/7 Customer Service'}}
+            </h2>
+            @if ($cmssection2->content)
+            <p class="wow fadeInUp slow" style= "visibility: visible; animation-name: none;">
+              {!! $cmssection2->content !!}
+            </p>
+              @else
+            <p class="wow fadeInUp slow" style= "visibility: visible; animation-name: none;">
+              Got an issue? We respond
+              under 5 minutes on live chat and solve the problem for you.</p>
+              <br>
+              <b>
+                <span class="material-icons notranslate alt-color">chevron_right</span>Contact us anytime, from
               anywhere</b><br><br><b><span class="material-icons notranslate alt-color">chevron_right</span>One-to-one
               trading support for all clients</b><br><br>
+            @endif
+
           </div>
         </div>
       </div>
@@ -115,17 +172,27 @@
       <div class="container">
         <div class=" row container">
           <div class="col l6 s12"><br>
-            <h2 class="app-mobile-center white-text">Seven Years of Impeccable Service</h2>
+            <h2 class="app-mobile-center white-text">
+              {{ $cmssection3->title ?? 'Seven Years of Impeccable Service'}}
+            </h2>
+            @if ($cmssection3->content)
+            <p class="app-text-justify light-text f-24">
+              {!! $cmssection3->content !!}
+            </p>
+            @else
             <p class="app-text-justify light-text f-24">{{ config('app.name')}} was founded in 2014 by a group of professionals
               who are artfully combining the technical expertise required to Copy Professional Traders (If you can’t
               trade on your own).</p>
             <p class="app-text-justify light-text f-24">Forex Trading, Crypto Currency Trading and Stock Trading with
               a dedicated corporate team, state of the art headquarters and a passion for helping those with a strong
               desire to improve their lives</p>
+            @endif
           </div>
           <div class="col l6 s12">
             <center>
-                <img src="{{asset('front/images/site/7.png')}}" class="responsive-img" style="max-height: 40vh;"><br>
+                <img src="{{
+              $cmssection3->image ??
+                  asset('front/images/site/7.png')}}" class="responsive-img" style="max-height: 40vh;"><br>
             </center>
           </div>
         </div>
@@ -157,18 +224,29 @@
     <section class="bg bg-secondary app-py-3 bg-gradient-charity">
       <div class="container row app-py-3">
         <div class="col l6 s12">
-          <h2 class="wow fadeInUp slow" style= "visibility: visible; animation-name: none;">Our Charity Missions</h2>
+          <h2 class="wow fadeInUp slow" style= "visibility: visible; animation-name: none;">
+            {{ $cmssectionCharity->title ?? 'Our Charity Missions'}}
+          </h2>
           <br>
-          <p class="f-20 wow fadeInUp slow" style= "visibility: visible; animation-name: none;">We believe everyone has
+          @if ($cmssectionCharity->content)
+          <p class="f-20 wow fadeInUp slow" style= "visibility: visible; animation-name: none;">
+            {!! $cmssectionCharity->content !!}
+          </p><br>
+          @else  
+          <p class="f-20 wow fadeInUp slow" style= "visibility: visible; animation-name: none;">
+            We believe everyone has
             the right to a decent life. So, we channel a part of our earnings to bring positive change to local
             communities.</p><br>
           <p class="f-20 wow fadeInUp slow" style= "visibility: visible; animation-name: none;">{{ config('app.name')}} partners
             with trusted humanitarian organizations and on-site volunteers to deliver emergency aid to disaster
             victims and run awareness and education programs. We also help vulnerable communities to overcome poverty
             and ensure healthy growth.</p>
+          @endif
         </div>
         <div class="col l6 s12 wow fadeInUp slow" style= "visibility: visible; animation-name: none;">
-          <center><img src="{{asset('front/images/site/Heart.png')}}" class="responsive-img" style="max-height: 350px;"></center>
+          <center><img src="{{
+            $cmssectionCharity->image ??
+            asset('front/images/site/Heart.png')}}" class="responsive-img" style="max-height: 350px;"></center>
         </div>
       </div>
     </section>
