@@ -15,11 +15,11 @@
           <div class="col l5 s12 app-mobile-center"><br>
             <div>
               <h1>
-                {{ $cmshero1->title ?? 'Profitability On The Rise'}}
+                {{ $cmshero1->title ?: 'Profitability On The Rise'}}
                 </h1>
             <br>
             <p class="f-24">
-              {!! $cmshero1->content ?? 'A trading platform that supports your financial goals.' !!}
+              {!! $cmshero1->content ?: 'A trading platform that supports your financial goals.' !!}
               </p>
             </div>
             
@@ -29,7 +29,7 @@
           </div>
           <div class="col l6 offset-l1 s12">
             <img src="{{
-              $cmshero1->image ??
+              $cmshero1->image ?:
               asset('front/images/site/landing.png')
               }}" class="responsive-img" style="width: 400px">
           </div>
@@ -41,7 +41,7 @@
         <div class="row">
           <div class="col l6 s12 wow fadeInUp slow" style="visibility: visible;">
             <center><img src="{{
-            $cmshero2->image ??
+            $cmshero2->image ?:
               asset('front/images/site/device.png')
               }}" class="responsive-img"
                 style="height: 40vh;"><br><br></center>
@@ -49,7 +49,7 @@
           <div class="col l6 s12 wow fadeInUp slow" style= "visibility: visible; animation-name: none;">
             <div class="container"><br><br>
               <h2 style="color: white">
-                {!! $cmshero2->title ?? 'Smooth Experience on any Device' !!}
+                {!! $cmshero2->title ?: 'Smooth Experience on any Device' !!}
                 
               </h2><br>
                 @if ($cmshero2->content)
@@ -85,7 +85,7 @@
           <div class="row">
             <div class="col l6 s12 app-py-3">
               <h2>
-                {{ $cmssection1->title ?? '134 countries'}}
+                {{ $cmssection1->title ?: '134 countries'}}
               </h2>
               <p class="f-24">
                 @if ($cmssection1->content)
@@ -129,7 +129,7 @@
           <div class="col l6 s12">
             <div class="container">
               <center><img src="{{
-              $cmssection2->image ??
+              $cmssection2->image ?:
                 asset('front/images/site/customer-service.png')
                 }}" class="responsive-img" style="max-height: 35vh;">
               </center>
@@ -137,7 +137,7 @@
           </div>
           <div class="col l6 s12">
             <h2 class="wow fadeInUp slow" style= "visibility: visible; animation-name: none;">
-              {{ $cmssection2->title ?? 'Unrivaled 24/7 Customer Service'}}
+              {{ $cmssection2->title ?: 'Unrivaled 24/7 Customer Service'}}
             </h2>
             @if ($cmssection2->content)
             <p class="wow fadeInUp slow" style= "visibility: visible; animation-name: none;">
@@ -173,7 +173,7 @@
         <div class=" row container">
           <div class="col l6 s12"><br>
             <h2 class="app-mobile-center white-text">
-              {{ $cmssection3->title ?? 'Seven Years of Impeccable Service'}}
+              {{ $cmssection3->title ?: 'Seven Years of Impeccable Service'}}
             </h2>
             @if ($cmssection3->content)
             <p class="app-text-justify light-text f-24">
@@ -191,7 +191,7 @@
           <div class="col l6 s12">
             <center>
                 <img src="{{
-              $cmssection3->image ??
+              $cmssection3->image ?:
                   asset('front/images/site/7.png')}}" class="responsive-img" style="max-height: 40vh;"><br>
             </center>
           </div>
@@ -225,7 +225,7 @@
       <div class="container row app-py-3">
         <div class="col l6 s12">
           <h2 class="wow fadeInUp slow" style= "visibility: visible; animation-name: none;">
-            {{ $cmssectionCharity->title ?? 'Our Charity Missions'}}
+            {{ $cmssectionCharity->title ?: 'Our Charity Missions'}}
           </h2>
           <br>
           @if ($cmssectionCharity->content)
@@ -245,7 +245,7 @@
         </div>
         <div class="col l6 s12 wow fadeInUp slow" style= "visibility: visible; animation-name: none;">
           <center><img src="{{
-            $cmssectionCharity->image ??
+            $cmssectionCharity->image ?:
             asset('front/images/site/Heart.png')}}" class="responsive-img" style="max-height: 350px;"></center>
         </div>
       </div>
