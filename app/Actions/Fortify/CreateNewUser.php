@@ -35,6 +35,7 @@ class CreateNewUser implements CreatesNewUsers
         $user = User::create([
             'email' => $input['email'],
             'password' => Hash::make($input['password']),
+            'status' => 'active', //TODO: change to pending
         ]);
         event(new CreateUserAccounts($user));
         return $user;
