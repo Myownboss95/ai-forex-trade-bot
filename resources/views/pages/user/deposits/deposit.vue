@@ -21,7 +21,7 @@
               <FormGroup
                 :disabled="disableElements"
                 name="amount"
-                placeholder="Amount"
+                placeholder="Amount in USD"
                 v-model="form.amount"
                 class="mt-2"
               />

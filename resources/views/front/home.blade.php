@@ -253,7 +253,7 @@
     <div class="bg app-py-2 ">
       <div class="row container">
         <h3 class="center">What is Bitcoin Mining?</h3><br>
-        <div class="video-container"><iframe width="853" height="480" src="https://youtu.be/zy-42HFAcQw?si=-7cIDssr3qCIr9pv"
+        <div class="video-container"><iframe width="853" height="480" src="https://youtube.com/shorts/gtpLd02t0no"
             frameborder="0" allowfullscreen=""></iframe></div>
       </div>
     </div>

@@ -26,7 +26,7 @@
           <SidebarItem name="Send Email" :url="route('admin.mail.index')" icon="mail" v-if="is_admin" />
           <SidebarItem name="CMS" :url="route('admin.cms.index')" icon="list" v-if="is_admin" />
           <li class="menu-title">Plans</li>
-          <SidebarItem name="Subscriptions" :url="route('user.subscriptions.plans')" icon="gift" v-if="!is_admin" />
+          <SidebarItem name="Bot Pricing" :url="route('user.subscriptions.plans')" icon="gift" v-if="!is_admin" />
 
           <li class="menu-title">Settings</li>
 
@@ -59,7 +59,7 @@
 const is_admin = computed(()=>usePage().props.value.auth.user.is_admin == 1);
 
 
-const botsMenu = computed(() => is_admin == true ? 'Trade Bots' : 'Trade Bot');
+const botsMenu = computed(() => is_admin == true ? 'Trade Bots' : 'Buy Trade Bot');
 
   onMounted((_) => {
     new MetisMenu('#side-menu');
