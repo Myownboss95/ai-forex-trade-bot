@@ -250,13 +250,29 @@
         </div>
       </div>
     </section>
-    <div class="bg app-py-2 ">
+    {{-- <div class="bg app-py-2 ">
       <div class="row container">
         <h3 class="center">What is Bitcoin Mining?</h3><br>
         <div class="video-container"><iframe width="853" height="480" src="https://youtube.com/shorts/gtpLd02t0no"
             frameborder="0" allowfullscreen=""></iframe></div>
       </div>
+    </div> --}}
+    <div class="bg app-py-2">
+      <div class="row container text-center">
+        <h3 class="center">What is Bitcoin Mining?</h3><br>
+        <div class="video-container">
+          <video width="853" height="480" controls class="mx-auto" 
+          style="display: block;
+            margin: 0 auto;
+            max-width: 100%;
+            ">
+            <source src="{{ asset('videos/bitcoin-mining.mp4') }}" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </div>
     </div>
+    
     <section class="bg center app-py-3">
       <div class="container">
         <div class="row">
