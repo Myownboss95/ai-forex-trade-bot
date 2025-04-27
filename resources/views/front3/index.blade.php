@@ -429,7 +429,7 @@
                                     <a href="#">Bitcoin</a><a href="#">Cryptocurrency</a>
                                 </div>
                                 <div class="case--title">
-                                    <h4><a href="#">Bitcoin’s Price Surge is Making Hobby Mining Profitable
+                                    <h4><a href="#">Bitcoin’s Price Surge is Making Hobby trading Profitable
                                             Again</a></h4>
                                 </div>
                             </div>
@@ -437,7 +437,7 @@
                     </div>
 
 
-                    <div class="case-item filter-Mining">
+                    <div class="case-item filter-trading">
                         <div class="case-item-container">
                             <div class="case--img">
                                 <img src="{{ asset('/images/case/3col/6.jpg') }}" alt="case Item">
@@ -452,7 +452,7 @@
 
                             <div class="case--content">
                                 <div class="case--cat">
-                                    <a href="#">Mining</a><a href="#">Bitcoin</a>
+                                    <a href="#">trading</a><a href="#">Bitcoin</a>
                                 </div>
                                 <div class="case--title">
                                     <h4><a href="#">The Rise of the Avalon 721 Bitcoin ASIC Miner</a></h4>
@@ -663,7 +663,7 @@
                     <h2 class="heading--title">News & Headlines</h2>
                     <p class="heading--desc mb-0">Follow our latest news and thoughts which focuses
                         exclusively on investment strategy guide, blockchain tech, crypto-trading and
-                        mining.</p>
+                        trading.</p>
                 </div>
             </div>
 

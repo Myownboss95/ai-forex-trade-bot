@@ -342,7 +342,7 @@
                         <h2 class="heading--title">News & Headlines</h2>
                         <p class="heading--desc mb-0">Follow our latest news and thoughts which focuses
                             exclusively on investment strategy guide, blockchain tech, crypto-trading and
-                            mining.</p>
+                            trading.</p>
                     </div>
                 </div>
             </div>

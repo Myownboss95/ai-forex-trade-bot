@@ -64,7 +64,7 @@
     </section>
     <div class="bg app-py-2 ">
         <div class="row container">
-            <h3 class="center">What is Bitcoin Mining?</h3><br>
+            <h3 class="center">What is AI Traderbot?</h3><br>
             <div class="video-container"><iframe width="853" height="480"
                     src="https://www.youtube.com/embed/GmOzih6I1zs" frameborder="0" allowfullscreen=""></iframe></div>
         </div>
@@ -75,25 +75,25 @@
                 <div class="app-my-2 col l4 s12 wow fadeInUp" data-wow-delay="0.4s"
                     style="visibility: visible; animation-delay: 0.4s; animation-name: none;"><img
                         src="{{ asset('front/images/site/ServiceVector3.png') }}" class="responsive-img">
-                    <h3 class="h4">Daily Mining Outputs</h3>
-                    <p class="app-mb-2">Returns made from either trading or mining transactions will be added to your
+                    <h3 class="h4">Daily trading Outputs</h3>
+                    <p class="app-mb-2">Returns made from either trading or trading transactions will be added to your
                         account
                         daily and automatically.</p>
                 </div>
                 <div class="app-my-2 col l4 s12 wow fadeInUp" style= "visibility: visible; animation-name: none;"><img
                         src="{{ asset('front/images/site/ServiceVector1.png') }}" class="responsive-img">
-                    <h3 class="h4">State of the Art Mining</h3>
+                    <h3 class="h4">State of the Art trading</h3>
                     <p class="app-mb-2">Productivity is a top notch quality for any investment. So, for every trade action
                         or
-                        blockchain mining algorithm that we offer, we’re providing some of the highest performing systems
+                        blockchain trading algorithm that we offer, we’re providing some of the highest performing systems
                         and
                         softwares that exist</p>
                 </div>
                 <div class="app-my-2 col l4 s12 wow fadeInUp" data-wow-delay="0.2s"
                     style="visibility: visible; animation-delay: 0.2s; animation-name: none;"><img
                         src="{{ asset('front/images/site/ServiceVector2.png') }}" class="responsive-img">
-                    <h3 class="h4">Diverse Mining Portfolio</h3>
-                    <p class="app-mb-2">Choose from a wide range of target assets for trading and over 10 major mining
+                    <h3 class="h4">Diverse trading Portfolio</h3>
+                    <p class="app-mb-2">Choose from a wide range of target assets for trading and over 10 major trading
                         algorithms that cut across 4 mineable cryptocurrencies</p>
                 </div>
             </div>
@@ -101,8 +101,8 @@
                 <div class="app-my-2 col l4 s12 wow fadeInUp" style= "visibility: visible; animation-name: none;"><img
                         src="{{ asset('front/images/site/ServiceVector45.png') }}" class="responsive-img">
                     <h3 class="h4">Hardware is already running</h3>
-                    <p class="app-mb-2">Don’t wrestle with rig assembly and hot, noisy miners at home. We have the fastest
-                        bitcoin mining hardware running for you already</p>
+                    <p class="app-mb-2">Don’t wrestle with rig assembly and hot, noisy bots at home. We have the fastest
+                        AI Traderbot hardware running for you already</p>
                 </div>
                 <div class="app-my-2 col l4 s12 wow fadeInUp" data-wow-delay="0.2s"
                     style="visibility: visible; animation-delay: 0.2s; animation-name: none;"><img

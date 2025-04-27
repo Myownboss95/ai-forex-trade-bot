@@ -25,7 +25,7 @@
           <li class="menu-title" v-if="is_admin">Communication</li>
           <SidebarItem name="Send Email" :url="route('admin.mail.index')" icon="mail" v-if="is_admin" />
           <SidebarItem name="CMS" :url="route('admin.cms.index')" icon="list" v-if="is_admin" />
-          <li class="menu-title">Plans</li>
+          <li class="menu-title" v-if="!is_admin">Plans</li>
           <SidebarItem name="Bot Pricing" :url="route('user.subscriptions.plans')" icon="gift" v-if="!is_admin" />
 
           <li class="menu-title">Settings</li>

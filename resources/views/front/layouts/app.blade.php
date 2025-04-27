@@ -203,8 +203,8 @@
             <li><a class="sidenav-close" href="/pages/crypto-trading"><span
                   class="material-icons notranslate">copyright</span><span style="padding-left: 10px;">Crypto
                   Trading</span></a></li>
-            <li><a class="sidenav-close" href="/pages/crypto-mining"><span
-                  class="material-icons notranslate">dns</span><span style="padding-left: 10px;">Crypto Mining</span></a>
+            <li><a class="sidenav-close" href="/pages/crypto-trading"><span
+                  class="material-icons notranslate">dns</span><span style="padding-left: 10px;">Crypto trading</span></a>
             </li>
             <li><a class="sidenav-close" href="/pages/forex-trading"><span
                   class="material-icons notranslate">wysiwyg</span><span style="padding-left: 10px;">Forex
@@ -236,12 +236,12 @@
             <li><a class="sidenav-close" href="/pages/terms-of-service"><span
                   class="material-icons notranslate">folder_open</span><span style="padding-left: 10px;">Terms of
                   Service</span></a></li>
-            <li><a class="sidenav-close" href="/pages/bitcoin-mining"><span
+            <li><a class="sidenav-close" href="/pages/bitcoin-trading"><span
                   class="material-icons notranslate">copyright</span><span style="padding-left: 10px;">Bitcoin
-                  Mining</span></a></li>
-            <li><a class="sidenav-close" href="/pages/dogecoin-mining"><span
+                  trading</span></a></li>
+            <li><a class="sidenav-close" href="/pages/dogecoin-trading"><span
                   class="material-icons notranslate">copyright</span><span style="padding-left: 10px;">Dogecoin
-                  Mining</span></a></li> --}}
+                  trading</span></a></li> --}}
             <li><a class="sidenav-close" href="/"><span class="material-icons notranslate">home</span><span
                   style="padding-left: 10px;">Home Page</span></a></li>
             <li><a class="sidenav-close" href="{{route('front.faqs')}}"><span
