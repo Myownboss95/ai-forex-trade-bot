@@ -62,13 +62,24 @@
             </div>
         </div>
     </section>
-    <div class="bg app-py-2 ">
-        <div class="row container">
-            <h3 class="center">What is AI Traderbot?</h3><br>
-            <div class="video-container"><iframe width="853" height="480"
-                    src="https://www.youtube.com/embed/GmOzih6I1zs" frameborder="0" allowfullscreen=""></iframe></div>
+    <div class="bg app-py-2">
+        <div class="row container text-center">
+          <h3 class="center">What is AI Trader Bot?</h3><br>
+          <div class="video-container" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%;">
+            <video controls 
+              style="
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+              ">
+              <source src="{{ asset('videos/bitcoin-mining.mp4') }}" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
         </div>
-    </div>
+      </div>
     <section class="bg center app-py-3">
         <div class="container">
             <div class="row">
