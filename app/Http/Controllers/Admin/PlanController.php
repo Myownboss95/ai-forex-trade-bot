@@ -25,7 +25,7 @@ class PlanController extends Controller
     }
 
     public function store(StorePlanRequest $request)
-    {
+    { 
         DB::beginTransaction();
         try {
             $plan = Plan::create($request->except('features'));

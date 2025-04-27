@@ -110,7 +110,7 @@ const props =  defineProps(['plan','features'])
 
     const updatePlan = () => {
         if (!form.features.length) return error('At least a plan feature is required');
-        form.put(route('admin.plans.update',props.plan.id));
+        form.put(route('admin.plans.update',props.plan.id)); 
   };
 </script>
 
